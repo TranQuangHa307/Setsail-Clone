@@ -1,0 +1,75 @@
+/*.app {*/
+/*    overflow: hidden;*/
+/*}*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    height: var(--header-height);
+    background: white;
+}
+
+.header .header__logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.header__tool {
+    display: flex;
+}
+
+.header .header__link {
+    display: flex;
+}
+
+.header__link .header__link--item {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: black;
+    padding: 31px 30px 30px 32px;
+    display: block;
+    position: relative;
+}
+
+.header__link .header__link--item::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 0px;
+    left: 0px;
+    bottom: 0px;
+    height: 2px;
+}
+
+.header__link .header__link--item:hover {
+    color: var(--primary-color);
+}
+
+.header__link--item:hover .header__link--item::after {
+    width: 100%;
+}
+
+.header .header__tool {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header__tool .header__tool-item {
+    font-size: 2.8rem;
+    cursor: pointer;
+    margin: 0 12px;
+}
+
+.header__tool .header__tool-item:hover {
+    color: var(--primary-color);
+}
+
+.header__logo .header__logo-image {
+    width: 150px;
+    height: 48px;
+}
