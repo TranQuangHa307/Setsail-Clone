@@ -177,6 +177,10 @@
     animation: zoom linear 3s infinite;
 }
 
+.section__one__slider1__image--wrap {
+    overflow: hidden;
+}
+
 .section__one__slider1 {
     position: relative;
 }
@@ -256,9 +260,20 @@
     border-radius: 5px;
 }
 
+.card__image--wrap {
+    position: relative;
+    overflow: hidden;
+}
+
 .card__image {
     width: 100%;
     height: 175px;
+    object-fit: cover;
+    transition: ease-in-out 0.6s;
+}
+
+.card__image:hover {
+    transform: scale(1.08);
 }
 
 .card__information {
@@ -281,7 +296,7 @@
 
 .card__information__calendar {
     font-size: 1.4rem;
-    margin: 0 10px;
+    margin: 0 10px 0 20px;
     color: #fff;
 }
 
@@ -343,3 +358,222 @@
 }
 
 /* End: Section 2 */
+
+/* Section 3 */
+
+.section__three {
+    margin-top: 100px;
+}
+
+.section__three__titles {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section__three__title--one {
+    display: block;
+    font-family: Satisfy,cursive;
+    font-size: 33px;
+    line-height: 1.8em;
+    color: #3fd0d4;
+}
+
+.section__three__title--two {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+}
+
+.section__three__video {
+    text-align: center  ;
+}
+
+.section__three__description {
+    font-size: 1.7rem;
+    line-height: 1.9;
+    margin: 17px 0;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.section__three__button {
+    color: white;
+    width: 220px;
+    height: 60px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__three__button--wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.section__three__button:hover {
+    background-color: #23a9af;
+    transition: 0.4s;
+}
+
+.section__three__description--text {
+    width: 40%;
+    text-align: center;
+}
+
+/* End: Section 3 */
+
+/* Section 4 */
+
+.section__four {
+    margin-top: 100px;
+}
+
+.section__four__image {
+    background-image: url("https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/skiing-parallax-1.jpg");
+    background-repeat: no-repeat;
+    background-position: top -300px left 0px;
+    /*background-size: cover;*/
+    width: 100%;
+    height: 646px;
+}
+
+.section__four__container {
+    position: relative;
+}
+
+.section__four__title-text {
+    font-size: 6.5rem;
+    color: white;
+    margin: 0;
+}
+
+.section__four__description {
+    padding: 17px 0 0 0;
+}
+
+.section__four__description-text {
+    font-size: 1.7rem;
+    line-height: 1.6;
+    color: white;
+}
+
+.section__four__header--wrap {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.section__four__reviews {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 110px;
+    padding-left: 0;
+}
+
+.section__four__review__item--card {
+    display: flex;
+    padding: 40px 42px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    width: 507px;
+    height: 230px;
+    align-items: center;
+}
+
+.section__four__review__item__card--title {
+    text-decoration: none;
+    color: black;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.section__four__review__item__card--description {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.section__four__review__item__card--name {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.section__four__review__item__card--image {
+    padding-right: 15px;
+}
+
+.section__four__review__item__card--star {
+    margin-bottom: 10px;
+}
+
+.section__four__review__item--card {
+    background: white;
+}
+
+.section__four__review--item {
+    margin: 0 15px
+}
+
+.section__four__review--item:first-child {
+    margin-left: 0;
+}
+
+.section__four__reviews__control {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.section__four__reviews__control--label {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(63,208,212,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+}
+
+.section__four__reviews__control--label:hover {
+    background-color: var(--primary-color);
+}
+
+.section__four__reviews__control--label .checkmark {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    padding: 5px;
+    background-color: rgba(63,208,212,.5);
+    display: none;
+}
+
+.section__four__reviews__control--label input:checked + .checkmark {
+    display: block;
+    background-color: var(--primary-color);
+}
+
+/* End: Section 4 */
+
+/* Section 5 */
+
+.section__five {
+    margin-top: 100px;
+}
+/* End: Section 5 */
