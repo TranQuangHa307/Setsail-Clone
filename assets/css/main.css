@@ -474,9 +474,15 @@
 .section__four__reviews {
     list-style: none;
     display: flex;
+    padding-left: 0;
+    transition: transform ease 2s;
+}
+
+.section__four__reviews--block {
+    width: 100%;
     position: absolute;
     bottom: 110px;
-    padding-left: 0;
+    overflow: hidden;
 }
 
 .section__four__review__item--card {
